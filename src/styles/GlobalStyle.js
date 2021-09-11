@@ -75,6 +75,13 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
+
+  .header,
+  .contents {
+    min-width: 360px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
 `;
 
 export default GlobalStyle;

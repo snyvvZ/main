@@ -21,8 +21,10 @@ const StyledButtonWrap = css`
 `;
 
 const StyledTitle = styled.h1`
-  order: 2;
   ${StyledButtonWrap};
+
+  order: 2;
+  text-align: center;
 
   > a {
     display: inline-flex;
@@ -55,7 +57,7 @@ const StyledUtilRight = styled.div`
 
 const Header = () => {
   return (
-    <StyledHeader>
+    <StyledHeader className="header">
       <StyledTitle>
         <a href="/" aria-label="무신사 메인 페이지로 이동">
           <LogoMusinsa />
