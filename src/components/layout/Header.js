@@ -12,6 +12,7 @@ const StyledHeader = styled.header`
   right: 0;
   top: 0;
   background-color: ${variables.white};
+  z-index: 500;
 `;
 
 const StyledButtonWrap = css`

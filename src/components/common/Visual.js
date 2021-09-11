@@ -2,22 +2,21 @@ import React from "react";
 import visualData from "../../data/visualData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styled from "styled-components";
+import "swiper/swiper-bundle.min.css";
 
-const VisualSwiper = ({ children }) => <Swiper>{children}</Swiper>;
+const VisualSwiper = ({ className, children }) => (
+  <Swiper className={className}>{children}</Swiper>
+);
 
 const StyledVisual = styled(VisualSwiper)`
-  .swiper-container {
-    background-color: red !important;
-  }
-  .swiper-slide {
-    background-color: red !important;
-  }
-  .swiper-wrapper {
-    background-color: red !important;
-  }
-
   img {
     width: 100%;
+  }
+
+  figcaption {
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 `;
 

@@ -3,7 +3,7 @@ import GlobalStyle from "./styles/GlobalStyle";
 import Header from "./components/layout/Header";
 import Contents from "./components/layout/Contents";
 import Visual from "./components/common/Visual";
-import Navigation from "./components/common/Navigation";
+import MainTab from "./components/common/MainTab";
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
       <Contents>
         <Visual />
 
-        <Navigation />
+        <MainTab />
       </Contents>
     </>
   );

@@ -31,4 +31,4 @@ const MainTab = () => {
   );
 };
 
-export default MainTab;
+export default React.memo(MainTab);
