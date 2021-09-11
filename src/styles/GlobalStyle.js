@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     font-family: '-apple-system', 'HelveticaNeue', "Roboto", "Noto Sans KR", "helvetica", "Gulim", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     color: $black;
     line-height: 1.5;
   }
