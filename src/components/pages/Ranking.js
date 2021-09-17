@@ -1,7 +1,12 @@
 import React from "react";
+import TitlePage from "../common/TitlePage";
 
 const Ranking = () => {
-  return <div>랭킹</div>;
+  return (
+    <section>
+      <TitlePage page={`랭킹`} />
+    </section>
+  );
 };
 
 export default Ranking;

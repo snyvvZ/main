@@ -1,7 +1,12 @@
 import React from "react";
+import TitlePage from "../common/TitlePage";
 
 const Coordi = () => {
-  return <div>코디</div>;
+  return (
+    <section>
+      <TitlePage page={`코디`} />
+    </section>
+  );
 };
 
 export default Coordi;

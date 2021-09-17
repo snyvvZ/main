@@ -1,6 +1,6 @@
 import React from "react";
 
-const IcBell = () => {
+const Ic30StencilBell = () => {
   return (
     <svg
       width="30"
@@ -19,4 +19,4 @@ const IcBell = () => {
   );
 };
 
-export default IcBell;
+export default Ic30StencilBell;
