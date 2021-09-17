@@ -1,15 +1,21 @@
 import React from "react";
 import visualData from "../../data/visualData";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import SwiperCore, { Pagination } from "swiper";
 import styled from "styled-components";
 import variables from "../../styles/variables";
-import "swiper/swiper.scss";
-import "swiper/components/pagination/pagination.scss";
+import "swiper/swiper-bundle.min.css";
+
+SwiperCore.use([Pagination]);
 
 const VisualSwiper = ({ className, children }) => (
-  <Swiper className={className} modules={Pagination}>
-    {/* FIXME Pagination */}
+  <Swiper
+    className={className}
+    pagination={{
+      dynamicBullets: true,
+      clickable: true,
+    }}
+  >
     {children}
   </Swiper>
 );
@@ -17,6 +23,19 @@ const VisualSwiper = ({ className, children }) => (
 const StyledVisual = styled(VisualSwiper)`
   img {
     width: 100%;
+  }
+
+  .swiper-pagination {
+    bottom: 24px;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: ${variables.white};
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
   }
 `;
 
