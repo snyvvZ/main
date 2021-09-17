@@ -1,5 +1,5 @@
 // ANCHOR Header
 export { default as LogoMusinsa } from "./LogoMusinsa";
-export { default as IcBag } from "./IcBag";
-export { default as IcBell } from "./IcBell";
-export { default as IcHeart } from "./IcHeart";
+export { default as Ic30StencilBag } from "./Ic30StencilBag";
+export { default as Ic30StencilBell } from "./Ic30StencilBell";
+export { default as Ic30StencilHeart } from "./Ic30StencilHeart";

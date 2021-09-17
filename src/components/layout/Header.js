@@ -1,7 +1,12 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import variables from "../../styles/variables";
-import { IcBag, IcBell, IcHeart, LogoMusinsa } from "../../icons";
+import {
+  Ic30StencilBag,
+  Ic30StencilBell,
+  Ic30StencilHeart,
+  LogoMusinsa,
+} from "../../icons";
 
 const StyledHeader = styled.header`
   display: grid;
@@ -67,16 +72,16 @@ const Header = () => {
 
       <StyledUtilLeft>
         <a href="anchor" aria-label="알림 페이지로 이동">
-          <IcBell />
+          <Ic30StencilBell />
         </a>
       </StyledUtilLeft>
 
       <StyledUtilRight>
         <a href="anchor" aria-label="좋아요 페이지로 이동">
-          <IcHeart />
+          <Ic30StencilHeart />
         </a>
         <a href="anchor" aria-label="장바구니 페이지로 이동">
-          <IcBag />
+          <Ic30StencilBag />
         </a>
       </StyledUtilRight>
     </StyledHeader>
